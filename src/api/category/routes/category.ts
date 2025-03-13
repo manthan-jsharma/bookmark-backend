@@ -2,6 +2,6 @@
  * category router.
  */
 
-import { factories } from '@strapi/strapi';
+const { categoryRouter } = require('@strapi/strapi').factories;
 
-export default factories.createCoreRouter('api::category.category');
+module.exports = categoryRouter('api::bookmark.bookmark');
